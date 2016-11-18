@@ -17,8 +17,8 @@ source:
     - py2compat.patch
 
 build:
-  skip: true  # [win64]
-  number: 0
+#  skip: true  # [win64]
+  number: 1
   script: python setup.py install
 
 requirements:

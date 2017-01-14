@@ -1,6 +1,6 @@
 {% set name = "skyfield" %}
-{% set version = "0.9" %}
-{% set sha256 = "0f944793cfe63c897252c589ce29e4cc71dbafce1056d657517c02bfeb8e8a72" %}
+{% set version = "0.9.1" %}
+{% set sha256 = "744d191a027c349950e82539fa41c09c162c85ab758cf0595ad8d62a8046664f" %}
 
 package:
   name: {{ name|lower }}
@@ -17,7 +17,7 @@ source:
     - py2compat.patch
 
 build:
-  number: 1
+  number: 0
   script: python setup.py install
 
 requirements:

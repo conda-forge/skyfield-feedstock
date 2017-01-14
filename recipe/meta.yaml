@@ -14,7 +14,7 @@ source:
     # Python2 compatibility patch (works for py2 and py3).
     # Upstream PR: https://github.com/skyfielders/python-skyfield/pull/119
     # Merged upstream - should be dropped for the next release
-    - py2compat.patch
+    # - py2compat.patch
 
 build:
   number: 0

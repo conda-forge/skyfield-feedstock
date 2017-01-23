@@ -17,9 +17,9 @@ build:
 
 requirements:
   build:
-    - python
+          #    - python
   run:
-    - python
+          #- python
     - numpy
     - astropy 
     - pytz 

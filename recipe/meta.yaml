@@ -1,6 +1,6 @@
 {% set name = "skyfield" %}
-{% set version = "1.0" %}
-{% set sha256 = "69f3ee8463a80b92f4e5b0f7c5e01c14325226740084ac1be225652938e54ca4" %}
+{% set version = "1.1" %}
+{% set sha256 = "b186f202e82927a8d5cbd45408981c80a8dfc272b50b3ba6b5259c13013a1d7f" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 2
+  number: 0
   script: python setup.py install
 
 requirements:

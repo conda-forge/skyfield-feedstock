@@ -21,9 +21,7 @@ Skyfield efficient.
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/skyfield-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/skyfield-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/skyfield-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/skyfield-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/skyfield-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/skyfield-feedstock/branch/master)
+All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/skyfield-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/skyfield-feedstock)
 
 Current release info
 ====================

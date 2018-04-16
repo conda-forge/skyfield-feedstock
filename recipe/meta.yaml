@@ -1,6 +1,6 @@
 {% set name = "skyfield" %}
-{% set version = "1.2" %}
-{% set sha256 = "4464ce2f5df20f46d304a4c5af683dd52ee43ab89e629757bfd0803d9192d41e" %}
+{% set version = "1.3" %}
+{% set sha256 = "83aeaedcfe30f6039d3d7a1c30630804e7e42b6d6d523b0383130f8791b0334e" %}
 
 package:
   name: {{ name|lower }}
@@ -8,13 +8,14 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  #url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  # Temp fix for the problem on pypi links
+  url: https://files.pythonhosted.org/packages/17/1c/cba3ea32daca05d112f85c4f3b8c9a351fdf5bd45fc2617f601a6f97406f/skyfield-1.3.tar.gz
   sha256: {{ sha256 }}
 
 build:
   noarch: python
-  number: 1
-  #script: python setup.py install
+  number: 0
   script: python -m pip install --no-deps --ignore-installed . 
 
 requirements:

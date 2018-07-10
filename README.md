@@ -21,12 +21,15 @@ Skyfield efficient.
 Current build status
 ====================
 
-All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/skyfield-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/skyfield-feedstock)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/skyfield-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/skyfield-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/skyfield/badges/version.svg)](https://anaconda.org/conda-forge/skyfield)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/skyfield/badges/downloads.svg)](https://anaconda.org/conda-forge/skyfield)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-skyfield-green.svg)](https://anaconda.org/conda-forge/skyfield) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/skyfield.svg)](https://anaconda.org/conda-forge/skyfield) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/skyfield.svg)](https://anaconda.org/conda-forge/skyfield) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/skyfield.svg)](https://anaconda.org/conda-forge/skyfield) |
 
 Installing skyfield
 ===================

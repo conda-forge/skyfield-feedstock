@@ -13,14 +13,13 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: python -m pip install --no-deps --ignore-installed . 
 
 requirements:
   build:
     - python
     - pip
-    - jplephem
   run:
     - python
     - numpy
@@ -29,6 +28,8 @@ requirements:
     - lxml 
     - html5lib 
     - beautifulsoup4
+    - jplephem>=2.3
+    - sgp4>=1.4
 
 test:
   requires:

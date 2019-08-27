@@ -13,7 +13,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: python -m pip install --no-deps --ignore-installed . 
 
 requirements:
@@ -29,6 +29,8 @@ requirements:
     - lxml 
     - html5lib 
     - beautifulsoup4
+    - jplephem
+    - sgp4
 
 test:
   requires:

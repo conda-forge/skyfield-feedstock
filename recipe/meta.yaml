@@ -28,8 +28,8 @@ requirements:
     - lxml 
     - html5lib 
     - beautifulsoup4
-    - jplephem>=2.3
-    - sgp4>=1.4
+    - jplephem >=2.3
+    - sgp4 >=1.4
 
 test:
   requires:

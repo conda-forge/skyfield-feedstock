@@ -23,11 +23,6 @@ requirements:
   run:
     - python
     - numpy
-    - astropy 
-    - pytz 
-    - lxml 
-    - html5lib 
-    - beautifulsoup4
     - jplephem >=2.3
     - sgp4 >=1.4
 

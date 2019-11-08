@@ -13,7 +13,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
@@ -23,11 +23,6 @@ requirements:
   run:
     - python
     - numpy
-    - astropy 
-    - pytz 
-    - lxml 
-    - html5lib 
-    - beautifulsoup4
     - jplephem >=2.3
     - sgp4 >=1.4
 

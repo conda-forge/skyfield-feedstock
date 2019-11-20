@@ -1,6 +1,6 @@
 {% set name = "skyfield" %}
-{% set version = "1.14" %}
-{% set sha256 = "fc8a1e5bb4893aee64247de32583bc04f67cac17ba1fab2248fb3de2771f10ef" %}
+{% set version = "1.15" %}
+{% set sha256 = "5d738065b39be0299bc822021b1e1966bd8a68170e3aa833ba1287f84266f909" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:

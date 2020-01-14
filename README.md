@@ -123,6 +123,6 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
-* [@brandon-rhodes](https://github.com/brandon-rhodes/)
+* [@brandon-rhodes ReimarBauer](https://github.com/brandon-rhodes ReimarBauer/)
 * [@jochym](https://github.com/jochym/)
 

@@ -44,8 +44,7 @@ test:
     - pip install https://github.com/brandon-rhodes/assay/archive/master.zip
     - wget https://github.com/skyfielders/python-skyfield/raw/master/ci/hip_main.dat.gz
     - assay --batch skyfield.tests
-    - nosetests -v skyfield.tests.test_functions
-    - nosetests -v skyfield.tests.test_angles
+    - nosetests -v skyfield.tests
 
 about:
   home: http://rhodesmill.org/skyfield/

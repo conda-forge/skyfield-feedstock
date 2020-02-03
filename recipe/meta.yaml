@@ -30,6 +30,7 @@ test:
   requires:
     - mock
     - nose
+    - pip
     - jplephem
     - sgp4
   imports:

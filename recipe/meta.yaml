@@ -28,8 +28,6 @@ requirements:
     - pytz
 
 test:
-  source_files:
-    - ci/hip_main.dat.gz
   requires:
     - mock
     - nose
@@ -42,6 +40,7 @@ test:
     - skyfield.tests
   commands:
     - pip install https://github.com/brandon-rhodes/assay/archive/master.zip
+    - wget https://github.com/skyfielders/python-skyfield/raw/master/ci/hip_main.dat.gz
     - assay --batch skyfield.tests
     - nosetests -v skyfield.tests.test_functions
     - nosetests -v skyfield.tests.test_angles

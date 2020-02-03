@@ -37,6 +37,8 @@ test:
     - skyfield.data
     - skyfield.tests
   commands:
+    - pip install https://github.com/brandon-rhodes/assay/archive/master.zip
+    - assay --batch skyfield.tests
     - nosetests -v skyfield.tests.test_functions
     - nosetests -v skyfield.tests.test_angles
 

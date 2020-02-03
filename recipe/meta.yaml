@@ -25,8 +25,11 @@ requirements:
     - numpy
     - jplephem >=2.12
     - sgp4 >=2.2
+    - pytz
 
 test:
+  source_files:
+    - ci/hip_main.dat.gz
   requires:
     - mock
     - nose

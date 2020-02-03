@@ -32,6 +32,7 @@ test:
     - mock
     - nose
     - pip
+    - wget
     - jplephem
     - sgp4
   imports:

@@ -35,6 +35,7 @@ test:
     - wget
     - jplephem
     - sgp4
+    - pandas
   imports:
     - skyfield
     - skyfield.data

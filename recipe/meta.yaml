@@ -13,7 +13,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 2
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
@@ -24,21 +24,25 @@ requirements:
     - python
     - numpy
     - jplephem >=2.12
-    - sgp4 >=1.4
+    - sgp4 >=2.2
+    - pytz
 
 test:
   requires:
     - mock
-    - nose
+    - pip
+    - wget
     - jplephem
     - sgp4
+    - pandas
   imports:
     - skyfield
     - skyfield.data
     - skyfield.tests
   commands:
-    - nosetests -v skyfield.tests.test_functions
-    - nosetests -v skyfield.tests.test_angles
+    - pip install https://github.com/brandon-rhodes/assay/archive/master.zip
+    - wget https://github.com/skyfielders/python-skyfield/raw/master/ci/hip_main.dat.gz
+    - assay --batch skyfield.tests
 
 about:
   home: http://rhodesmill.org/skyfield/

@@ -1,6 +1,6 @@
 {% set name = "skyfield" %}
-{% set version = "1.17" %}
-{% set sha256 = "b035c5e8bf778711a74e64a9d313563310d0b609b35f69c0e2395af96dd5c319" %}
+{% set version = "1.18" %}
+{% set sha256 = "5ea2c35a8c186b29aee38422f4e2e138a7fbe1395d7c566550b1ee8185e15e14" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
 
 build:
   noarch: python
-  number: 2
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
@@ -49,7 +49,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'Elegant astronomy for Python'
+  summary: Elegant astronomy for Python
 
   description: |
     Skyfield computes positions for the stars, planets, and satellites in orbit around the Earth. 

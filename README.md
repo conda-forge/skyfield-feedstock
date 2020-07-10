@@ -5,7 +5,7 @@ Home: http://rhodesmill.org/skyfield/
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Elegant astronomy for Python
 

@@ -1,6 +1,6 @@
 {% set name = "skyfield" %}
-{% set version = "1.25" %}
-{% set sha256 = "9277958d7f55a1647968c40e531fa5836a4194100b08a27ecc32e4ec55fb29f3" %}
+{% set version = "1.26" %}
+{% set sha256 = "485ec6825730f4ad61f2698f288da00b48409546e2e524f9213910dbaa3a588c" %}
 
 package:
   name: {{ name|lower }}
@@ -41,7 +41,9 @@ test:
     - skyfield.tests
   commands:
     - pip install https://github.com/brandon-rhodes/assay/archive/master.zip
-    - wget https://github.com/skyfielders/python-skyfield/raw/master/ci/hip_main.dat.gz
+    - wget -q https://github.com/skyfielders/python-skyfield/raw/master/ci/hip_main.dat.gz
+    - wget -q https://github.com/skyfielders/python-skyfield/raw/master/ci/de421.bsp
+    - wget -q https://github.com/skyfielders/python-skyfield/raw/master/ci/de405.bsp
     - assay --batch skyfield.tests
 
 about:

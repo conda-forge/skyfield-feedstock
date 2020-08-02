@@ -42,6 +42,7 @@ test:
   commands:
     - pip install https://github.com/brandon-rhodes/assay/archive/master.zip
     - wget https://github.com/skyfielders/python-skyfield/raw/master/ci/hip_main.dat.gz
+    - wget https://github.com/skyfielders/python-skyfield/raw/master/ci/de421.bsp
     - assay --batch skyfield.tests
 
 about:

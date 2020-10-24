@@ -1,6 +1,6 @@
 {% set name = "skyfield" %}
-{% set version = "1.30" %}
-{% set sha256 = "c93b9c9ea176b8a4b682aad6fca30161b171cd8a4b5c35a3de69357f53cac2fe" %}
+{% set version = "1.31" %}
+{% set sha256 = "68316a9e151b32d9664fc0073436a2fbdeff1b12d5d81a4a2108480f1788ce35" %}
 
 package:
   name: {{ name|lower }}

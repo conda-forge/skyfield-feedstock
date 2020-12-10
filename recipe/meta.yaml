@@ -44,6 +44,7 @@ test:
     - wget -q https://github.com/skyfielders/python-skyfield/raw/master/ci/hip_main.dat.gz
     - wget -q https://github.com/skyfielders/python-skyfield/raw/master/ci/de421.bsp
     - wget -q https://github.com/skyfielders/python-skyfield/raw/master/ci/de405.bsp
+    - wget -q https://github.com/skyfielders/python-skyfield/raw/master/ci/finals2000A.all
     - assay --batch skyfield.tests
 
 about:

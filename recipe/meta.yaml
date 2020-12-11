@@ -1,6 +1,6 @@
 {% set name = "skyfield" %}
-{% set version = "1.33" %}
-{% set sha256 = "3ae0c8bfcc1599169e074cd2384249f391172b76bf169a370b48c82584363238" %}
+{% set version = "1.34" %}
+{% set sha256 = "5feb835f7bc4d0dd78f3dee91673eedfff2ff3c6bedcab09db0009b3f5ec6c59" %}
 
 package:
   name: {{ name|lower }}
@@ -44,6 +44,7 @@ test:
     - wget -q https://github.com/skyfielders/python-skyfield/raw/master/ci/hip_main.dat.gz
     - wget -q https://github.com/skyfielders/python-skyfield/raw/master/ci/de421.bsp
     - wget -q https://github.com/skyfielders/python-skyfield/raw/master/ci/de405.bsp
+    - wget -q https://github.com/skyfielders/python-skyfield/raw/master/ci/finals2000A.all
     - assay --batch skyfield.tests
 
 about:

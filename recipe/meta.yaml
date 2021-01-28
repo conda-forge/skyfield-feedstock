@@ -32,9 +32,8 @@ test:
     - mock
     - pip
     - wget
-    - jplephem
-    - sgp4
     - pandas
+    - pytz
   imports:
     - skyfield
     - skyfield.data

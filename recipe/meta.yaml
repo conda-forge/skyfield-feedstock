@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  noarch: python
+  noarch: python >=3.3
   number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
@@ -21,7 +21,7 @@ requirements:
     - python
     - pip
   run:
-    - python
+    - python >=3.3
     - numpy
     - jplephem >=2.13
     - sgp4 >=2.2

@@ -25,8 +25,8 @@ requirements:
     - numpy
     - jplephem >=2.13
     - sgp4 >=2.2
-    - pytz
-
+    - certifi >=2017.4.17
+    
 test:
   requires:
     - mock

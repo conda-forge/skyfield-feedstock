@@ -13,7 +13,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
@@ -44,7 +44,7 @@ test:
     - wget -q https://github.com/skyfielders/python-skyfield/raw/master/ci/de421.bsp
     - wget -q https://github.com/skyfielders/python-skyfield/raw/master/ci/de405.bsp
     - wget -q https://github.com/skyfielders/python-skyfield/raw/master/ci/finals2000A.all
-    - assay skyfield.tests
+    - assay --batch skyfield.tests
 
 about:
   home: http://rhodesmill.org/skyfield/

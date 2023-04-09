@@ -1,11 +1,11 @@
-About skyfield
-==============
+About skyfield-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/skyfield-feedstock/blob/main/LICENSE.txt)
 
 Home: http://rhodesmill.org/skyfield/
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/skyfield-feedstock/blob/main/LICENSE.txt)
 
 Summary: Elegant astronomy for Python
 

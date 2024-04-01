@@ -44,7 +44,9 @@ test:
     - git clone https://github.com/skyfielders/python-skyfield.git
     - cd python-skyfield
     - git checkout {{ version }}
+    - cd ci
     - assay --batch skyfield.tests
+    - cd ..
     - cd ..
 
 about:

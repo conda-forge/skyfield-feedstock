@@ -1,6 +1,6 @@
 {% set name = "skyfield" %}
-{% set version = "1.45" %}
-{% set sha256 = "5f0e0530bda6c9bf23a188c574181b4ee63cf2ce1ec1e0c8825f45ae577d8b36" %}
+{% set version = "1.48" %}
+{% set sha256 = "8b81f15b65e0b826341b17bf9e1446a0af94e49ed5983c04f123da49c1045fe1" %}
 
 package:
   name: {{ name|lower }}
@@ -34,17 +34,20 @@ test:
     - wget
     - pandas
     - pytz
+    - git
   imports:
     - skyfield
     - skyfield.data
     - skyfield.tests
   commands:
     - pip install https://github.com/brandon-rhodes/assay/archive/master.zip
-    - wget -q https://github.com/skyfielders/python-skyfield/raw/master/ci/hip_main.dat.gz
-    - wget -q https://github.com/skyfielders/python-skyfield/raw/master/ci/de421.bsp
-    - wget -q https://github.com/skyfielders/python-skyfield/raw/master/ci/de405.bsp
-    - wget -q https://github.com/skyfielders/python-skyfield/raw/master/ci/finals2000A.all
+    - git clone https://github.com/skyfielders/python-skyfield.git
+    - cd python-skyfield
+    - git checkout {{ version }}
+    - cd ci
     - assay --batch skyfield.tests
+    - cd ..
+    - cd ..
 
 about:
   home: http://rhodesmill.org/skyfield/

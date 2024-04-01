@@ -34,17 +34,18 @@ test:
     - wget
     - pandas
     - pytz
+    - git
   imports:
     - skyfield
     - skyfield.data
     - skyfield.tests
   commands:
     - pip install https://github.com/brandon-rhodes/assay/archive/master.zip
-    - wget -q https://github.com/skyfielders/python-skyfield/raw/master/ci/hip_main.dat.gz
-    - wget -q https://github.com/skyfielders/python-skyfield/raw/master/ci/de421.bsp
-    - wget -q https://github.com/skyfielders/python-skyfield/raw/master/ci/de405.bsp
-    - wget -q https://github.com/skyfielders/python-skyfield/raw/master/ci/finals2000A.all
+    - git clone https://github.com/skyfielders/python-skyfield.git
+    - cd python-skyfield
+    - git checkout {{ version }}
     - assay --batch skyfield.tests
+    - cd ..
 
 about:
   home: http://rhodesmill.org/skyfield/

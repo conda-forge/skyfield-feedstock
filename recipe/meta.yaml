@@ -8,20 +8,20 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
-    - python
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.3
+    - python >={{ python_min }}
     - numpy
     - jplephem >=2.13
     - sgp4 >=2.2
@@ -35,6 +35,7 @@ test:
     - pandas
     - pytz
     - git
+    - python {{ python_min }}
   imports:
     - skyfield
     - skyfield.data

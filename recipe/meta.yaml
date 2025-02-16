@@ -1,6 +1,6 @@
 {% set name = "skyfield" %}
-{% set version = "1.49" %}
-{% set sha256 = "20883027b2bbf4017dd916b64faaeb3713a8f88d7c8e353c15cd030ac63be92c" %}
+{% set version = "1.50" %}
+{% set sha256 = "3dd287fbed42ddcf32bdbf7d12b90cbeaf5f44fcefce700cd49514f5776c66ba" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:

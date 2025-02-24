@@ -1,6 +1,6 @@
 {% set name = "skyfield" %}
-{% set version = "1.49" %}
-{% set sha256 = "20883027b2bbf4017dd916b64faaeb3713a8f88d7c8e353c15cd030ac63be92c" %}
+{% set version = "1.51" %}
+{% set sha256 = "afebb71a86ff1049885133120f9149a54ed2d8b38721307eeb0e0a93ca73aafc" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
@@ -18,17 +18,19 @@ build:
 
 requirements:
   host:
-    - python
+    - python  {{ python_min }}
     - pip
+    - setuptools
   run:
-    - python >=3.3
+    - python >={{ python_min }}
     - numpy
     - jplephem >=2.13
-    - sgp4 >=2.2
+    - sgp4 >=2.13
     - certifi >=2017.4.17
 
 test:
   requires:
+    - python {{ python_min }}
     - mock
     - pip
     - wget

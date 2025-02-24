@@ -20,11 +20,12 @@ requirements:
   host:
     - python
     - pip
+    - setuptools
   run:
     - python >=3.3
     - numpy
     - jplephem >=2.13
-    - sgp4 >=2.2
+    - sgp4 >=2.13
     - certifi >=2017.4.17
 
 test:
